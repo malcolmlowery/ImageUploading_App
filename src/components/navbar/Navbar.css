@@ -1,0 +1,30 @@
+nav {
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 9px 10px rgba(0, 0, 0, 100);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav > h3 {
+  color: #2196F3;
+}
+
+nav > label > input {
+  display: none;
+}
+
+nav > label {
+  background-color: #2196F3;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 8px 16px;
+}
+
+nav > label:hover {
+  background-color: #51b1ff;
+  cursor: pointer;
+}

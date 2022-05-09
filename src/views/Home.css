@@ -1,0 +1,40 @@
+main {
+  align-items: center;
+  background-color: #F5F5F5;
+  display: flex;
+  height: calc(100vh - 65.5px);
+  width: 100%;
+  justify-content: center;
+}
+
+main > p {
+  color: #424242;
+}
+
+.container_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_content > img {
+  border-radius: 8px;
+  max-height: 500px;
+  min-height: 300px;
+  margin-bottom: 10px;
+  object-fit: cover;
+  max-width: 500px;
+}
+
+.container_content > button {
+  background-color: #2196F3;
+  border-radius: 6px;
+  border-style: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 8px 20px;
+}
+
+.container_content > button:hover {
+  background-color: #51b1ff;
+  cursor: pointer;
+}
