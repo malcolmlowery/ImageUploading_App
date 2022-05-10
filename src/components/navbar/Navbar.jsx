@@ -8,7 +8,7 @@ const Navbar = ({ onChange }) => {
         <input 
           name='image' 
           type='file' 
-          onChange={(val) => onChange(val.target.files[0])}
+          onChange={(val) => onChange(val)}
         />
         Choose Image
       </label>

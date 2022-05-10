@@ -9,7 +9,10 @@ const Home = () => {
   
   return(
     <div className='container'>
-      <Navbar onChange={(img) => setImage(img)}/>
+      <Navbar onChange={(event) => {
+        if(event.target.files.length === 0) return null
+        setImage(event.target.files[0])
+      }}/>
       <main>
         { image == null ?
           <p>No image to preview</p>
