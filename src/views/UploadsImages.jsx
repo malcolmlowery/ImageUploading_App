@@ -1,11 +1,28 @@
-import { useLocation } from 'react-router-dom';
+import { useRecoilState } from 'recoil';
+import { imageState } from '../utils/app.state';
+import { uploadImageToFirebase } from '../utils/imageUploader';
+import './uploadImages.css';
 
-const UploadImagesView = () => {
-  const location = useLocation()
-  console.log(location)
+const Home = () => {
+  const [image,] = useRecoilState(imageState);
+
   return(
-    <h1>UploadImageView</h1>
+    <div className='container'>
+      <main>
+        { image == null ?
+          <p>No image to preview</p>
+          :
+          <div className='container_content'>
+            <img src={URL.createObjectURL(image)} alt="img" />
+            <button onClick={() => {
+              uploadImageToFirebase(image)
+              
+            }}>Submit</button>
+          </div>
+        }
+      </main>
+    </div>
   )
 };
 
-export default UploadImagesView;
+export default Home;

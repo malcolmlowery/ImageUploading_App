@@ -4,3 +4,8 @@ export const imageState = atom({
   key: 'imageState',
   default: null
 });
+
+export const routerPathState = atom({
+  key: 'routerPathState',
+  default: '/',
+});

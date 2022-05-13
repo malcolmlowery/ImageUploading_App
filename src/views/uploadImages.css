@@ -2,7 +2,7 @@ main {
   align-items: center;
   background-color: #F5F5F5;
   display: flex;
-  height: calc(100vh - 65.5px);
+  height: calc(100vh - 75px);
   width: 100%;
   justify-content: center;
 }

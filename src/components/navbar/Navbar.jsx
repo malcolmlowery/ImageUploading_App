@@ -2,7 +2,7 @@ import { useRecoilState } from 'recoil';
 import { imageState } from '../../utils/app.state';
 import './Navbar.css';
 
-const Navbar = ({ showUploadButton = true }) => {
+const Navbar = ({ showUploadButton }) => {
   const [, setImage] = useRecoilState(imageState)
 
   const onChange = event => {
