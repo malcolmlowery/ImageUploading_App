@@ -1,7 +1,7 @@
 nav {
   align-items: center;
   background-color: #fff;
-  box-shadow: 0 9px 10px rgba(0, 0, 0, 100);
+  box-shadow: 0 9px 20px rgba(0, 0, 0, .05);
   color: #fff;
   display: flex;
   flex-direction: row;
