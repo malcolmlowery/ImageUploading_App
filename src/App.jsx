@@ -1,9 +1,9 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
+import { routerPathState } from './utils/app.state';
 import Home from "./views/Home";
 import UploadImagesView from './views/uploadsImages';
 import Navbar from './components/navbar/Navbar';
-import { routerPathState } from './utils/app.state';
 import './styles/globals.css'
 
 const App = () => {

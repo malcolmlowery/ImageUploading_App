@@ -3,7 +3,8 @@ import {
   addDoc,
   collection, 
   doc,
-  getFirestore 
+  getFirestore,
+  getDocs
 } from 'firebase/firestore';
 import { 
   getStorage, 
@@ -34,7 +35,8 @@ export {
   collection,
   db,
   doc,
-  getDownloadURL, 
+  getDownloadURL,
+  getDocs, 
   storage, 
   storageRef,
   uploadStringData 
