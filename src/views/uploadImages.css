@@ -1,4 +1,4 @@
-main {
+.uploadImages > main {
   align-items: center;
   background-color: #F5F5F5;
   display: flex;
@@ -7,7 +7,7 @@ main {
   justify-content: center;
 }
 
-main > p {
+.uploadImages > main > p {
   color: #424242;
 }
 

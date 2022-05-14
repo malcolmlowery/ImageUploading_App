@@ -7,7 +7,7 @@ const Home = () => {
   const [image,] = useRecoilState(imageState);
 
   return(
-    <div className='container'>
+    <div className='uploadImages'>
       <main>
         { image == null ?
           <p>No image to preview</p>

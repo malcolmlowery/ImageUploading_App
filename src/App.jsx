@@ -1,7 +1,7 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
 import { routerPathState } from './utils/app.state';
-import Home from "./views/Home";
+import Home from "./views/home";
 import UploadImagesView from './views/uploadsImages';
 import Navbar from './components/navbar/Navbar';
 import './styles/globals.css'
@@ -13,7 +13,7 @@ const App = () => {
 
   return (
       <>
-        <Navbar showUploadButton={pathnameLocation !== '/uploadImage' ? false : true } />
+        <Navbar showUploadButton={pathnameLocation !== '/uploadimage' ? false : true } />
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/uploadImage' element={<UploadImagesView />} />

@@ -27,6 +27,7 @@ export const uploadImageToFirebase = (image) => {
     await uploadStringData(ref, fr.result, 'data_url');
     const url = await getDownloadURL(ref);
     
-    await addDoc(collection(db, '/images'), { imageURL: url })
+    const s = await addDoc(collection(db, '/images'), { imageURL: url })
+    console.log(s.id)
   }
 };
